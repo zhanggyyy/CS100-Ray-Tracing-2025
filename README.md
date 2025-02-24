@@ -8,6 +8,37 @@ This project is intended for recitation of Introduction to Programming (CS100) a
 
 1. Choosing the recitation class.
 
+### Week 2
+
+1. Introduction to C and C++.
+2. Introduction to the project.
+3. Introduction to git and github.
+4. Compiling and running a program through Visual Studio/GCC/Clang.
+
+## How to Run the Program
+
+```bash
+python script/run.py
+```
+
+## FAQs
+
+> 1. [Windows, Powershell] In running the program, Powershell errors that "无法在本地运行脚本", "Execution Policy".
+
+Run Powershell in Administrator mode, and type
+```powershell
+Set-ExecutionPolicy -Scope LocalMachine -ExecutionPolicy RemoteSigned
+```
+and then type `Y` for yes. Then run the program again.
+
+> 2. [Python] `ModuleNotFoundError: No module named 'PIL'`.
+
+Install the module `Pillow` by typing
+```bash
+pip install Pillow
+```
+and then run the program again.
+
 ## References
 
 1. [Ray Tracing in One Weekend](https://raytracing.github.io/)
