@@ -32,8 +32,8 @@ int main(void) {
     for (int y = 0; y < image_height; ++y) {
         for (int x = 0; x < image_width; ++x) {
             // [0, W - 1] -> [0.0, 1.0]
-            double r = (double)x / (double)(image_width - 1);
-            double g = (double)y / (double)(image_height - 1);
+            double r = (double)(image_width - 1 - x) / (double)(image_width - 1);
+            double g = (double)(image_height - 1 - y) / (double)(image_height - 1);
             double b = 0.25;
 
             // [0.0, 1.0] -> [0, 255]
